@@ -73,6 +73,7 @@ jobs:
       - name: Check ROS 2 installation
         run: |
           . /opt/ros/${{ matrix.node }}/setup.sh
+          python3 -m rosidl_adapter --help
           ros2 pkg list
 
       - name: Download the Integration Service Fast DDS SystemHandle

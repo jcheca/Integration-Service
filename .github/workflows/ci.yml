@@ -32,7 +32,7 @@ jobs:
         include:
           - os: ubuntu-20.04
           - os: ubuntu-22.04
-            node: galactic
+            node: [galactic]
     runs-on: ${{ matrix.os }}
 
     steps:

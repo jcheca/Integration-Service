@@ -28,11 +28,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [foxy, galactic, humble]
+        node: [humble]
         include:
           - os: ubuntu-20.04
           - os: ubuntu-22.04
-            node: [galactic]
+            node: humble
     runs-on: ${{ matrix.os }}
 
     steps:
